@@ -1,5 +1,3 @@
-const { eventNames } = require("process");
-
 const handleSearch = () => {
   const input = document.getElementById("searchInput").value.trim();
 
@@ -10,7 +8,7 @@ const handleSearch = () => {
       search_term: input,
     });
 
-    alert("검색어 ${input}에 대한 검색을 실행하였습니다.");
+    alert(`검색어 ${input}에 대한 검색을 실행하였습니다.`);
   } else {
     alert("검색어를 입력해주세요.");
   }
